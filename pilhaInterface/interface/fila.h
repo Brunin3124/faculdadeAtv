@@ -2,7 +2,7 @@
 #define FILA_H
 
 
-typedef struct Fila;
+typedef struct fila Fila;
 
 //funcoes
 Fila* criar_fila();
