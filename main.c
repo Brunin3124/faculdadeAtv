@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include "pilha.h"
+
+int main(){
+
+    Pilha* pilha = criar_pilha();
+    push(pilha,5);
+    push(pilha,8);
+
+    int retorno;
+    retorno = pop(pilha);
+    printf("%d\n", retorno);
+    retorno = pop(pilha);
+    printf("%d\n", retorno);
+
+
+    return 0;
+}
