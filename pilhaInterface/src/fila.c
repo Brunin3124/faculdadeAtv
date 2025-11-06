@@ -53,3 +53,16 @@ int retirar(Fila* fila){
     return retorno;
 
 }
+
+void liberar(Fila* fila){
+    if(fila == NULL) return;  // Verificação de segurança
+    
+    Lista* l;
+    while(fila->primeiro != NULL){
+        l = fila->primeiro;
+        fila->primeiro = fila->primeiro->prox;
+        free(l);
+    }
+    free(fila);
+    fila->fim = NULL;
+}

@@ -16,9 +16,17 @@ int main(){
 
     Fila* fila = criar_fila();
     inserir(fila,9);
+    inserir(fila,12);
+    inserir(fila,22);
     
     retorno = retirar(fila);
     printf("%d\n", retorno);
+
+
+    
+    liberar(fila);
+    printf("%d", isvazio(fila));
+    
 
     return 0;
 }
