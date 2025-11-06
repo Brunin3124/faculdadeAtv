@@ -49,6 +49,7 @@ int retirar(Fila* fila){
     retorno = fila->primeiro->valor;
     l = fila->primeiro;
     fila->primeiro = fila->primeiro->prox;
+    free(l);
     return retorno;
 
 }
